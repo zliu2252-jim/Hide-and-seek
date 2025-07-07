@@ -45,7 +45,7 @@ class AppTest {
         list.add(new Fuzzy("red"));
         // Must sort before binary search
         list.sort((f1, f2) -> f1.color.compareTo(f2.color));
-        int idx = MainApp.binarySearch(list);
+        int idx = App.binarySearch(list);
         assertNotEquals(-1, idx);
         assertEquals("gold", list.get(idx).color);
     }
